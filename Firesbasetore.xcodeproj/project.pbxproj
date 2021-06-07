@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BB620A3266DE31100B29257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620A2266DE31100B29257 /* AppDelegate.swift */; };
+		7BB620A5266DE31100B29257 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620A4266DE31100B29257 /* SceneDelegate.swift */; };
+		7BB620A7266DE31100B29257 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620A6266DE31100B29257 /* ContentView.swift */; };
+		7BB620A9266DE31400B29257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB620A8266DE31400B29257 /* Assets.xcassets */; };
+		7BB620AC266DE31400B29257 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB620AB266DE31400B29257 /* Preview Assets.xcassets */; };
+		7BB620AF266DE31400B29257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB620AD266DE31400B29257 /* LaunchScreen.storyboard */; };
+		7BB620B8266DE32200B29257 /* FirebaseStore.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BB620B7266DE32200B29257 /* FirebaseStore.gif */; };
+		7BB620CB266DE3A000B29257 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620CA266DE3A000B29257 /* Constants.swift */; };
+		7BB620D1266DE3C400B29257 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620D0266DE3C400B29257 /* FirestoreManager.swift */; };
+		7BB620D7266DE42400B29257 /* AddStoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620D6266DE42400B29257 /* AddStoreViewModel.swift */; };
+		7BB620DA266DE42B00B29257 /* StoreListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620D9266DE42B00B29257 /* StoreListViewModel.swift */; };
+		7BB620DD266DE42F00B29257 /* StoreItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620DC266DE42F00B29257 /* StoreItemListViewModel.swift */; };
+		7BB620E1266DE44B00B29257 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620E0266DE44B00B29257 /* View+Extensions.swift */; };
+		7BB620E5266DE49900B29257 /* AddStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620E4266DE49900B29257 /* AddStoreView.swift */; };
+		7BB620E8266DE4A000B29257 /* StoreItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB620E7266DE4A000B29257 /* StoreItemListView.swift */; };
+		7BB620EB266DE6BE00B29257 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BB620EA266DE6BE00B29257 /* GoogleService-Info.plist */; };
+		BE8DED8A3B862923A603DEB2 /* Pods_Firesbasetore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB000C084A16E11AB4B04646 /* Pods_Firesbasetore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		704806DD8A36887FAAD0FEAB /* Pods-Firesbasetore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firesbasetore.release.xcconfig"; path = "Target Support Files/Pods-Firesbasetore/Pods-Firesbasetore.release.xcconfig"; sourceTree = "<group>"; };
+		7BB6209F266DE31100B29257 /* Firesbasetore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firesbasetore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB620A2266DE31100B29257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BB620A4266DE31100B29257 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7BB620A6266DE31100B29257 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BB620A8266DE31400B29257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BB620AB266DE31400B29257 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BB620AE266DE31400B29257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BB620B0266DE31400B29257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB620B7266DE32200B29257 /* FirebaseStore.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FirebaseStore.gif; sourceTree = "<group>"; };
+		7BB620C7266DE38000B29257 /* StoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItem.swift; sourceTree = "<group>"; };
+		7BB620C8266DE38000B29257 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		7BB620CA266DE3A000B29257 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7BB620D0266DE3C400B29257 /* FirestoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		7BB620D6266DE42400B29257 /* AddStoreViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoreViewModel.swift; sourceTree = "<group>"; };
+		7BB620D9266DE42B00B29257 /* StoreListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreListViewModel.swift; sourceTree = "<group>"; };
+		7BB620DC266DE42F00B29257 /* StoreItemListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreItemListViewModel.swift; sourceTree = "<group>"; };
+		7BB620E0266DE44B00B29257 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		7BB620E4266DE49900B29257 /* AddStoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoreView.swift; sourceTree = "<group>"; };
+		7BB620E7266DE4A000B29257 /* StoreItemListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreItemListView.swift; sourceTree = "<group>"; };
+		7BB620EA266DE6BE00B29257 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		98590B80563A99154A2373CA /* Pods-Firesbasetore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firesbasetore.debug.xcconfig"; path = "Target Support Files/Pods-Firesbasetore/Pods-Firesbasetore.debug.xcconfig"; sourceTree = "<group>"; };
+		CB000C084A16E11AB4B04646 /* Pods_Firesbasetore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firesbasetore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BB6209C266DE31100B29257 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8DED8A3B862923A603DEB2 /* Pods_Firesbasetore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04450E6262352AFF43CBA632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB000C084A16E11AB4B04646 /* Pods_Firesbasetore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61FEFE2C2A9F202BD305AEC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98590B80563A99154A2373CA /* Pods-Firesbasetore.debug.xcconfig */,
+				704806DD8A36887FAAD0FEAB /* Pods-Firesbasetore.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7BB62096266DE31100B29257 = {
+			isa = PBXGroup;
+			children = (
+				7BB620B7266DE32200B29257 /* FirebaseStore.gif */,
+				7BB620A1266DE31100B29257 /* Firesbasetore */,
+				7BB620A0266DE31100B29257 /* Products */,
+				61FEFE2C2A9F202BD305AEC6 /* Pods */,
+				04450E6262352AFF43CBA632 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7BB620A0266DE31100B29257 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BB6209F266DE31100B29257 /* Firesbasetore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BB620A1266DE31100B29257 /* Firesbasetore */ = {
+			isa = PBXGroup;
+			children = (
+				7BB620C9266DE39000B29257 /* Utils */,
+				7BB620C6266DE38000B29257 /* Models */,
+				7BB620D4266DE3F100B29257 /* Managers */,
+				7BB620D5266DE41000B29257 /* View Models */,
+				7BB620DF266DE43600B29257 /* Extensions */,
+				7BB620E3266DE47B00B29257 /* Views */,
+				7BB620A2266DE31100B29257 /* AppDelegate.swift */,
+				7BB620A4266DE31100B29257 /* SceneDelegate.swift */,
+				7BB620A6266DE31100B29257 /* ContentView.swift */,
+				7BB620A8266DE31400B29257 /* Assets.xcassets */,
+				7BB620AD266DE31400B29257 /* LaunchScreen.storyboard */,
+				7BB620B0266DE31400B29257 /* Info.plist */,
+				7BB620EA266DE6BE00B29257 /* GoogleService-Info.plist */,
+				7BB620AA266DE31400B29257 /* Preview Content */,
+			);
+			path = Firesbasetore;
+			sourceTree = "<group>";
+		};
+		7BB620AA266DE31400B29257 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7BB620AB266DE31400B29257 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BB620C6266DE38000B29257 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7BB620C7266DE38000B29257 /* StoreItem.swift */,
+				7BB620C8266DE38000B29257 /* Store.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BB620C9266DE39000B29257 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7BB620CA266DE3A000B29257 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7BB620D4266DE3F100B29257 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7BB620D0266DE3C400B29257 /* FirestoreManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7BB620D5266DE41000B29257 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				7BB620D6266DE42400B29257 /* AddStoreViewModel.swift */,
+				7BB620D9266DE42B00B29257 /* StoreListViewModel.swift */,
+				7BB620DC266DE42F00B29257 /* StoreItemListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		7BB620DF266DE43600B29257 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7BB620E0266DE44B00B29257 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7BB620E3266DE47B00B29257 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BB620E4266DE49900B29257 /* AddStoreView.swift */,
+				7BB620E7266DE4A000B29257 /* StoreItemListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BB6209E266DE31100B29257 /* Firesbasetore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB620B3266DE31400B29257 /* Build configuration list for PBXNativeTarget "Firesbasetore" */;
+			buildPhases = (
+				E71D240F2023F1F1B97C30E5 /* [CP] Check Pods Manifest.lock */,
+				7BB6209B266DE31100B29257 /* Sources */,
+				7BB6209C266DE31100B29257 /* Frameworks */,
+				7BB6209D266DE31100B29257 /* Resources */,
+				6295FC454D1EBB45E13BB366 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Firesbasetore;
+			productName = Firesbasetore;
+			productReference = 7BB6209F266DE31100B29257 /* Firesbasetore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BB62097266DE31100B29257 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7BB6209E266DE31100B29257 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 7BB6209A266DE31100B29257 /* Build configuration list for PBXProject "Firesbasetore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BB62096266DE31100B29257;
+			productRefGroup = 7BB620A0266DE31100B29257 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BB6209E266DE31100B29257 /* Firesbasetore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BB6209D266DE31100B29257 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB620AF266DE31400B29257 /* LaunchScreen.storyboard in Resources */,
+				7BB620AC266DE31400B29257 /* Preview Assets.xcassets in Resources */,
+				7BB620A9266DE31400B29257 /* Assets.xcassets in Resources */,
+				7BB620EB266DE6BE00B29257 /* GoogleService-Info.plist in Resources */,
+				7BB620B8266DE32200B29257 /* FirebaseStore.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6295FC454D1EBB45E13BB366 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Firesbasetore/Pods-Firesbasetore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Firesbasetore/Pods-Firesbasetore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Firesbasetore/Pods-Firesbasetore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E71D240F2023F1F1B97C30E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Firesbasetore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BB6209B266DE31100B29257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB620A3266DE31100B29257 /* AppDelegate.swift in Sources */,
+				7BB620E1266DE44B00B29257 /* View+Extensions.swift in Sources */,
+				7BB620E8266DE4A000B29257 /* StoreItemListView.swift in Sources */,
+				7BB620D1266DE3C400B29257 /* FirestoreManager.swift in Sources */,
+				7BB620D7266DE42400B29257 /* AddStoreViewModel.swift in Sources */,
+				7BB620DD266DE42F00B29257 /* StoreItemListViewModel.swift in Sources */,
+				7BB620A5266DE31100B29257 /* SceneDelegate.swift in Sources */,
+				7BB620A7266DE31100B29257 /* ContentView.swift in Sources */,
+				7BB620CB266DE3A000B29257 /* Constants.swift in Sources */,
+				7BB620E5266DE49900B29257 /* AddStoreView.swift in Sources */,
+				7BB620DA266DE42B00B29257 /* StoreListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7BB620AD266DE31400B29257 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BB620AE266DE31400B29257 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BB620B1266DE31400B29257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BB620B2266DE31400B29257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BB620B4266DE31400B29257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98590B80563A99154A2373CA /* Pods-Firesbasetore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Firesbasetore/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Firesbasetore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithkyo.Firesbasetore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BB620B5266DE31400B29257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704806DD8A36887FAAD0FEAB /* Pods-Firesbasetore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Firesbasetore/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Firesbasetore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithkyo.Firesbasetore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BB6209A266DE31100B29257 /* Build configuration list for PBXProject "Firesbasetore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB620B1266DE31400B29257 /* Debug */,
+				7BB620B2266DE31400B29257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB620B3266DE31400B29257 /* Build configuration list for PBXNativeTarget "Firesbasetore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB620B4266DE31400B29257 /* Debug */,
+				7BB620B5266DE31400B29257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BB62097266DE31100B29257 /* Project object */;
+}
