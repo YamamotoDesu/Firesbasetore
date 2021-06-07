@@ -5,7 +5,7 @@ https://www.udemy.com/course/the-complete-hands-on-swiftui-apps-using-firebase/
 # ツール、開発環境など
 - Xcode Version 12.4 (12D4e)
 - Swift 5
-- Firebase
+- Firestore Database
 
 <br><br>
 ![demo](https://github.com/YamamotoDesu/Firesbasetore/blob/main/FirebaseStore.gif)
